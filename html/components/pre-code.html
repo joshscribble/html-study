@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>♡ Show content as preformatted, with code</title>
+  <link rel="stylesheet" href="html/css/notes-theme.css">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1 class="title">Web<br />
+        Developer<br />
+        Bootcamp<br />
+        notes
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#">link 01</a></li>
+          <li><a href="#">A much longer link</a></li>
+          <li><a href="#">Something else</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+    <h3 class="t-head"><span class="lesson-title">Lessons 01-12:</span> Set up + HTML noob</h3>
+    <div class="t-body">
+      <h3>Use &lt;pre/&gt; to preformat your code.</h3>
+      <div>
+        <pre class="code">
+          <code>&lt;style type="text/css"&gt;</code>
+          <code>      pre.code {</code>
+          <code>        white-space: pre-wrap;</code>
+                }
+                pre.code:before {
+                    counter-reset: listing;
+                }
+                pre.code code {
+                    counter-increment: listing;
+                }
+                pre.code code:before {
+                    content: counter(listing) ". ";
+                }
+
+          </pre>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+
+</html>
